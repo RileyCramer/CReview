@@ -76,14 +76,14 @@ public class Program
 
         Console.WriteLine("What is the genre you would like?");
         string genree = Console.ReadLine();
-        Data(game, genree);
+        GenreData(game, genree);
 
         Console.WriteLine("What is the publisher you would like to select?");
         string pubb = Console.ReadLine();
-        Pub(game, pubb);
+        PublisherData(game, pubb);
     }
 
-    static void Data(List<VideoGame> game, string type)
+    static void GenreData(List<VideoGame> game, string type)
     {
         var total = game.Count();
         var type2 = new List<VideoGame>();
@@ -105,7 +105,7 @@ public class Program
         
     }
 
-    static void Pub(List<VideoGame> game, string type)
+    static void PublisherData(List<VideoGame> game, string type)
     {
         var total = game.Count();
         var type2 = new List<VideoGame>();
